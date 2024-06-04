@@ -2,6 +2,7 @@
       $navItems = [
           ['url' => '/', 'label' => 'Home'],
           ['url' => '/about', 'label' => 'About'],
+          ['url' => '/jobs', 'label' => 'Jobs'],
           ['url' => '/blog', 'label' => 'Blog'],
           ['url' => '/contact', 'label' => 'Contact'],
       ];
