@@ -5,4 +5,5 @@
 @section('content')
     <h1>About Us</h1>
     <p>This is the content of the about us page.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
 @endsection
