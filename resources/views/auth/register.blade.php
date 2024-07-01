@@ -1,10 +1,10 @@
 @extends('layouts.main')
 
-@section('title', 'Create Job')
+@section('title', 'Register')
 
 @section('content')
     <div class="my-4">
-        <h2>Create Job</h2>
+        <h2>Register</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, id.</p>
     </div>
     <form method="POST" action="/jobs">
