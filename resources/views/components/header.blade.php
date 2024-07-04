@@ -27,6 +27,10 @@
                           @endforeach
                       </ul>
                   </div>
+                  <div>
+                      <a href="/login" class="btn btn-primary">Login</a>
+                      <a href="/register" class="btn btn-primary">Register</a>
+                  </div>
               </div>
           </nav>
       </div>
