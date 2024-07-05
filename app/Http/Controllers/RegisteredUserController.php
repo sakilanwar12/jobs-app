@@ -24,6 +24,6 @@ class RegisteredUserController extends Controller
 
         $user = User::create($validated);
         Auth::login($user);
-        return redirect('/jobs');
+        return redirect('/login');
     }
 }

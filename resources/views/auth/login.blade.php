@@ -12,12 +12,24 @@
 
         <div class="form-group mt-2">
             <label for="email">Email</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email"
+                value="{{ old('email') }}">
+            @error('email')
+                <div class="alert alert-danger mt-2">
+                    {{ $message }}
+                </div>
+            @enderror
         </div>
 
         <div class="form-group mt-2">
             <label for="password">Password</label>
-            <input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
+            <input type="password" class="form-control" name="password" id="password" placeholder="Enter password"
+                value="{{ old('password') }}">
+            @error('password')
+                <div class="alert alert-danger mt-2">
+                    {{ $message }}
+                </div>
+            @enderror
         </div>
 
         <div class="d-flex gap-4 justify-content-end mt-4">

@@ -28,8 +28,16 @@
                       </ul>
                   </div>
                   <div>
-                      <a href="/login" class="btn btn-primary">Login</a>
-                      <a href="/register" class="btn btn-primary">Register</a>
+                      @guest
+                          <a href="/register" class="btn btn-primary">Register</a>
+                          <a href="/login" class="btn btn-primary">Login</a>
+                      @endguest
+                      @auth
+                          <form action="/logout" method="POST" id="logout-form">
+                              @csrf
+                              <button type="submit" class="btn btn-danger">Logout</button>
+                          </form>
+                      @endauth
                   </div>
               </div>
           </nav>
